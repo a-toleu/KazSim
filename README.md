@@ -23,7 +23,7 @@ python scripts/test.py --model_path models/your_model --input "Your complex text
 ```
 
 
-# KazSim Dataset
+# Dataset
 
 This repository contains a parallel dataset for the task of text simplification in the Kazakh language. The dataset consists of pairs of complex and simplified Kazakh sentences, curated to support research and development in natural language processing (NLP), especially for low-resource and morphologically rich languages.
 

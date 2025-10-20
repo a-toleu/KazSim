@@ -1,0 +1,10 @@
+unsloth
+torch>=2.0.0
+transformers>=4.36.0
+datasets
+pandas
+wandb
+trl
+pyyaml
+accelerate
+bitsandbytes

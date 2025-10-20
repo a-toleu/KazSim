@@ -1,0 +1,33 @@
+model:
+  name: "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+  max_seq_length: 2048
+  load_in_4bit: true
+  
+lora:
+  r: 32
+  alpha: 16
+  dropout: 0.0
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+training:
+  output_dir: "models/kazsim_model"
+  num_epochs: 2
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  warmup_steps: 5
+  logging_steps: 1
+  save_steps: 100
+  save_total_limit: 2
+
+wandb:
+  project: "text_simplification"
+  name: "kazsim_training"
+  enabled: true

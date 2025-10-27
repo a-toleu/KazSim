@@ -3,7 +3,7 @@
 
 # KazSim - Kazakh Text Simplification
 
-A text simplification library using fine-tuned LLaMA models with Unsloth for efficient training.
+A text simplification library using fine-tuned LLaMA models for efficient training.
 
 ## Installation
 ```bash
